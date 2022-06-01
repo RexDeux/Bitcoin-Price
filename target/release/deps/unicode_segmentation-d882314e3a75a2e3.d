@@ -1,0 +1,11 @@
+C:\Users\nmcdc\projects\crypto\target\release\deps\unicode_segmentation-d882314e3a75a2e3.rmeta: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\grapheme.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\sentence.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\word.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\tables.rs
+
+C:\Users\nmcdc\projects\crypto\target\release\deps\libunicode_segmentation-d882314e3a75a2e3.rlib: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\grapheme.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\sentence.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\word.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\tables.rs
+
+C:\Users\nmcdc\projects\crypto\target\release\deps\unicode_segmentation-d882314e3a75a2e3.d: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\grapheme.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\sentence.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\word.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\tables.rs
+
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\lib.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\grapheme.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\sentence.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\word.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\unicode-segmentation-1.9.0\src\tables.rs:
