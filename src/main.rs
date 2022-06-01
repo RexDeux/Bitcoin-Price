@@ -7,7 +7,7 @@ use structopt::StructOpt;
 use chrono::{Local, Utc, TimeZone};
 use std::time::Duration;
 use tokio::{task, time}; // 1.3.0
-
+use std::fs::OpenOptions;
 
 #[derive(StructOpt)]
 struct Cli {
@@ -37,45 +37,33 @@ async fn main() -> Result<(), ExitFailure> {
     let forever = task::spawn(async move {
         let mut interval = time::interval(Duration::from_secs(5));
 
-        
+    
         let mut outer_msg = format!(
-            "Right now, {:?} for {} the price is {} ", 
+            "Right now, {:?} for {} the price is {};
+            ", 
             date, args.bitcoin, price
         );
-
+        
+       
         let mut outer_msg1 = format!(
-            "{} has plunged below 30k$ and stands at {}",
-            args.bitcoin, price
+            "{} has plunged below 30k$ and stands at {} at {};
+            ",
+            args.bitcoin, price, date
         );
 
-        loop {
+        for x in 1..100{
             if price > 30000{
-            interval.tick().await;
-                println!(
-                    "Right now {} for {} the price is {} ", 
-                    date, args.bitcoin, price
-                );
+                interval.tick().await;
+                println!("{} - {}", x, outer_msg);
                 crypto.write_all(outer_msg.as_bytes());
-            }
+            ;}
             else if price < 30000 {
                 interval.tick().await;
-                println!(
-                    "{} has plunged below 30k$ and stands at {} at {}",
-                     args.bitcoin, price, date
-                );
+                println!("{} - {}",x , outer_msg1);
                 crypto.write_all(outer_msg1.as_bytes());
-                break;
             } 
-            else {
-                interval.tick().await;
-                println!(
-                    "Right now {} for {} the price is {} ", 
-                    date, args.bitcoin, price
-                );
-                crypto.write_all(outer_msg.as_bytes());
-            }     
         }
-    });
+        });
 
     forever.await;
 
