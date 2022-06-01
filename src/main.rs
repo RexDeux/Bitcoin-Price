@@ -1,5 +1,5 @@
 use serde::{Deserialize,Serialize};
-use reqwest::{self, header::{AUTHORIZATION, CONTENT_TYPE, ACCEPT}};
+use reqwest;
 use std::{env, fs, io::Write};
 use exitfailure::ExitFailure;
 use reqwest::Url;
@@ -35,22 +35,30 @@ async fn main() -> Result<(), ExitFailure> {
     let mut crypto = fs::File::create("bitcoin_price.json").expect("Failed to create");
     
     let msg = format!(
-        "Right now, {:?} for {} the price is {} ", 
+        "Right now, {}, for {} the price is {} ", 
         date, args.bitcoin, price
     );
     
-
-    println!(
-        "Right now {} for {} the price is {} ", 
-        date, args.bitcoin, price
-    );
-
     let forever = task::spawn(async move {
-        let mut interval = time::interval(Duration::from_secs(60));
+        let mut interval = time::interval(Duration::from_secs(10));
 
-        loop {
-            interval.tick().await;
-            crypto.write_all(msg.as_bytes());
+
+
+        for n in 1..100 {
+            if price > 30000{
+                let n = format!(
+                    "Right now, {}, for {} the price is {} ", 
+                    date, args.bitcoin, price
+                );
+                interval.tick().await;
+                crypto.write_all(msg.as_bytes());
+                println!(
+                    "Right now ,{}, for {} the price is :{} ", 
+                    date, args.bitcoin, price
+                );}
+            else {
+                println!("Bitcoin has plunged below 3000")
+            }
         }
     });
 
