@@ -1,5 +1,5 @@
 use serde::{Deserialize,Serialize};
-use reqwest;
+use reqwest::{self, header::{AUTHORIZATION, CONTENT_TYPE, ACCEPT}};
 use std::{env, fs, io::Write};
 use exitfailure::ExitFailure;
 use reqwest::Url;
@@ -34,31 +34,44 @@ async fn main() -> Result<(), ExitFailure> {
     let price = response.bitcoin.usd;
     let mut crypto = fs::File::create("bitcoin_price.json").expect("Failed to create");
     
-    let msg = format!(
-        "Right now, {}, for {} the price is {} ", 
+    let mut msg = format!(
+        "Right now, {:?} for {} the price is {} ", 
         date, args.bitcoin, price
     );
-    
+    let mut msg1 = format!(
+        "{} has plunged below 30k$ and stands at {}",
+        args.bitcoin, price
+    );
+
+
+
+
     let forever = task::spawn(async move {
-        let mut interval = time::interval(Duration::from_secs(10));
+        let mut interval = time::interval(Duration::from_secs(5));
 
-
-
-        for n in 1..100 {
+        
+        loop {
             if price > 30000{
-                let n = format!(
-                    "Right now, {}, for {} the price is {} ", 
-                    date, args.bitcoin, price
-                );
-                interval.tick().await;
+            interval.tick().await;
                 crypto.write_all(msg.as_bytes());
                 println!(
-                    "Right now ,{}, for {} the price is :{} ", 
+                    "Right now {} for {} the price is {} ", 
                     date, args.bitcoin, price
-                );}
-            else {
-                println!("Bitcoin has plunged below 3000")
+                );
+            
             }
+            else if price < 30000 {
+                interval.tick().await;
+                println!(
+                    "{} has plunged below 30k$ and stands at {}",
+                     args.bitcoin, price
+                );
+                crypto.write_all(msg1.as_bytes());
+            } 
+            else {
+                interval.tick().await;
+                crypto.write_all(msg.as_bytes());
+            }       
         }
     });
 
