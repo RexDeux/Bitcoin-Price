@@ -33,45 +33,47 @@ async fn main() -> Result<(), ExitFailure> {
     let response = Root::get(&args.bitcoin).await?;
     let price = response.bitcoin.usd;
     let mut crypto = fs::File::create("bitcoin_price.json").expect("Failed to create");
-    
-    let mut msg = format!(
-        "Right now, {:?} for {} the price is {} ", 
-        date, args.bitcoin, price
-    );
-    let mut msg1 = format!(
-        "{} has plunged below 30k$ and stands at {}",
-        args.bitcoin, price
-    );
-
-
-
 
     let forever = task::spawn(async move {
         let mut interval = time::interval(Duration::from_secs(5));
 
         
+        let mut outer_msg = format!(
+            "Right now, {:?} for {} the price is {} ", 
+            date, args.bitcoin, price
+        );
+
+        let mut outer_msg1 = format!(
+            "{} has plunged below 30k$ and stands at {}",
+            args.bitcoin, price
+        );
+
         loop {
             if price > 30000{
             interval.tick().await;
-                crypto.write_all(msg.as_bytes());
                 println!(
                     "Right now {} for {} the price is {} ", 
                     date, args.bitcoin, price
                 );
-            
+                crypto.write_all(outer_msg.as_bytes());
             }
             else if price < 30000 {
                 interval.tick().await;
                 println!(
-                    "{} has plunged below 30k$ and stands at {}",
-                     args.bitcoin, price
+                    "{} has plunged below 30k$ and stands at {} at {}",
+                     args.bitcoin, price, date
                 );
-                crypto.write_all(msg1.as_bytes());
+                crypto.write_all(outer_msg1.as_bytes());
+                break;
             } 
             else {
                 interval.tick().await;
-                crypto.write_all(msg.as_bytes());
-            }       
+                println!(
+                    "Right now {} for {} the price is {} ", 
+                    date, args.bitcoin, price
+                );
+                crypto.write_all(outer_msg.as_bytes());
+            }     
         }
     });
 
