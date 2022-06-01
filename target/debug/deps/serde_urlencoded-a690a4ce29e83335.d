@@ -1,0 +1,11 @@
+c:\Users\nmcdc\projects\crypto\target\debug\deps\serde_urlencoded-a690a4ce29e83335.rmeta: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\de.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\mod.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\key.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\pair.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\part.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\value.rs
+
+c:\Users\nmcdc\projects\crypto\target\debug\deps\serde_urlencoded-a690a4ce29e83335.d: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\de.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\mod.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\key.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\pair.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\part.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\value.rs
+
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\lib.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\de.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\mod.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\key.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\pair.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\part.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\value.rs:
