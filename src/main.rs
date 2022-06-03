@@ -51,16 +51,18 @@ async fn main() -> Result<(), ExitFailure> {
             args.bitcoin, price, date
         );
 
-        for x in 1..100{
+        for x in 1..1000{
             if price > 30000{
                 interval.tick().await;
                 println!("{} - {}", x, outer_msg);
                 crypto.write_all(outer_msg.as_bytes());
+                continue;
             ;}
             else if price < 30000 {
                 interval.tick().await;
                 println!("{} - {}",x , outer_msg1);
                 crypto.write_all(outer_msg1.as_bytes());
+                break;
             } 
         }
         });
