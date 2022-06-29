@@ -1,0 +1,13 @@
+C:\Users\nmcdc\projects\crypto\target\debug\deps\url-f913e3f04c0fb5b2.rmeta: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\host.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\origin.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\parser.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\path_segments.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\slicing.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\quirks.rs
+
+C:\Users\nmcdc\projects\crypto\target\debug\deps\liburl-f913e3f04c0fb5b2.rlib: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\host.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\origin.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\parser.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\path_segments.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\slicing.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\quirks.rs
+
+C:\Users\nmcdc\projects\crypto\target\debug\deps\url-f913e3f04c0fb5b2.d: C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\lib.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\host.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\origin.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\parser.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\path_segments.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\slicing.rs C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\quirks.rs
+
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\lib.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\host.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\origin.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\parser.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\path_segments.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\slicing.rs:
+C:\Users\nmcdc\.cargo\registry\src\github.com-1ecc6299db9ec823\url-2.2.2\src\quirks.rs:
